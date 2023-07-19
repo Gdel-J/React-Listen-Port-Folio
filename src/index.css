@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #C2E7FF, #82CFFD);
+  }
+  
+  .navbar, .navbar-brand {
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: #82CFFD;
+  }
+  
+  div.navbar-brand {
+    padding-top: 2em;
+    margin-bottom: 2em;
+  }
+  
+  .navbar .navbar-brand > .navbar-item,
+  .navbar .navbar-brand .navbar-link {
+    display: inline-block;
+  }
+  
+  main {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 30em;
+    margin-right: 30em;
+    background-color: #E6F3FF;
+    padding: 1em;
+    border-radius: 10px;
+  }
+  
+  .my-own-picture {
+    clip-path: circle();
+    width: 250px;
+  }
+  
+  .label {
+    text-align: left;
+  }
+  
+  my-footer {
+    background-color: #C2E7FF;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    main {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+  }
+  
