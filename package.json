@@ -1,0 +1,22 @@
+{
+  "name": "react-listen-port-folio",
+  "version": "1.0.0",
+  "description": "React PortFofio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gdel-J/React-Listen-Port-Folio.git"
+  },
+  "author": "Gerard DEL VECCHIO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gdel-J/React-Listen-Port-Folio/issues"
+  },
+  "homepage": "https://github.com/Gdel-J/React-Listen-Port-Folio#readme"
+}
+
+
+
