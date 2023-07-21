@@ -1,11 +1,11 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Header from './components/Header/index';
-import About from './components/About/index';
-import Portfolio from './components/Portfolio/index';
-import Contact from './components/Contact/index';
-import Resume from './components/Resume/index';
-import Footer from './components/Footer/index';
+import Header from './components/Header';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 const App = () => {
     return (

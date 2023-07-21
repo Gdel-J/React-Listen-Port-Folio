@@ -1,85 +1,121 @@
-// Import necessary dependencies
-import React, { useState } from 'react';
-import { useForm } from '@formspree/react'; // useForm is a custom hook from Formspree for handling form submissions
-import { validateEmail } from '../utils/helpers'; // Utility function for email validation
+import React, { useState } from "react";
+import { validateEmail } from "../utils/helpers";
 
-// Define functional component "Contact"
 function Contact() {
-  // useState and useForm hooks to handle form state and submission
-  const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_ID);
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
+  // State variables for the form fields and the error message
+  // Initially, all fields and the error message are empty strings
+  const [email, setEmail] = useState("");
+  const [userName, setUserName] = useState("");
+  const [message, setMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  // If form submission is successful, display thank you message and Back to About button
-  if (state.succeeded) {
-    return (
-      <div>
-        <p>Thanks for reaching out!</p>
-        <button className="button is-medium is-primary is-half m-6" onClick={()=> window.open("/#contact")}>Back to About</button>
-      </div>
-    );
-  }
+  // This function handles input changes for all the form fields
+  const handleInputChange = (e) => {
+    const { target } = e; // Destructuring the target from the event
+    const inputType = target.name; // The name of the input field that triggered the change
+    const inputValue = target.value; // The value of the input field that triggered the change
 
-  // Handle form field changes
-  const handleChange = (e) => {
-    setErrorMessage(''); // Clear any existing error messages
-
-    // Perform validation checks
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value); // Check if the email is valid
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      }
+    // Based on the input field name, we update the corresponding state variable
+    if (inputType === "email") {
+      setEmail(inputValue);
+    } else if (inputType === "userName") {
+      setUserName(inputValue);
     } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`A ${e.target.name} is required.`); // Check if the field is empty
-      }
-    }
-
-    // If there are no validation errors, update the form state
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
+      setMessage(inputValue);
     }
   };
 
-  // Render the form
+  // This function handles form submission
+  const handleFormSubmit = (e) => {
+    e.preventDefault(); // Prevents page refresh on form submission
+
+    // If email is not valid or userName is empty, we set an error message
+    if (!validateEmail(email) || !userName) {
+      setErrorMessage("Email or Name is invalid");
+      return; // We exit the function if there's an error so the user can correct it
+    }
+
+    // If message is empty, we set an error message
+    if (!message) {
+      setErrorMessage("Message is required.");
+      return; // We exit the function if there's an error
+    }
+
+    // If there's no error, we clear the form fields
+    setUserName("");
+    setMessage("");
+    setEmail("");
+  };
+
   return (
-    <div>
-      <p className="content is-medium">Contact Me</p>
-      <hr />
-      <form id="contact-form" onSubmit={handleSubmit}>
-        {/* Name field */}
-        <div className="field">
-          <label className="label" htmlFor="name">Name</label>
-          <input className="input" type="text" name="name" defaultValue={name} onBlur={handleChange} />
+    <section id="reach-out" className="contact">
+      <div className="flex-row">
+        <h2 className="section-title secondary-border">Reach Out</h2>
+      </div>
+
+      <div className="contact-info">
+        <div>
+          <h3>Hello {userName}</h3>
+          <p>Want to get into contact?</p>
+          <address>
+            [Winter Springs], [FLORIDA] <br />
+            <br />
+            E:{" "}
+            <a href="mailto://jessygddelvecchio@gmail.com">
+              [jessygddelvecchio@gmail.com]
+            </a>
+          </address>
+          <p>
+            <strong>I'd love to hear your feedback!</strong>
+          </p>
         </div>
 
-        {/* Email field */}
-        <div className="field">
-          <label className="label" htmlFor="email">Email Address</label>
-          <input className="input" type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
+        <div className="contact-form">
+          <h3>Contact Me</h3>
+          <form className="form">
+            <label htmlFor="contact-name">Your Name</label>
+            <input
+              value={userName}
+              name="userName"
+              onChange={handleInputChange}
+              type="text"
+              id="contact-name"
+              placeholder="Your Name"
+            />
 
-        {/* Message field */}
-        <div className="field">
-          <label className="label" htmlFor="message">Message</label>
-          <textarea className="textarea" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
+            <label htmlFor="contact-email">Your Email</label>
+            <input
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              type="email"
+              id="contact-email"
+              placeholder="Your Email"
+            />
 
-        {/* Display any error message */}
+            <label htmlFor="contact-message">Message</label>
+            <textarea
+              value={message}
+              name="message"
+              onChange={handleInputChange}
+              type="message"
+              id="contact-message"
+              placeholder="Your Message"
+            />
+            <button type="button" onClick={handleFormSubmit}>
+              Submit
+            </button>
+          </form>
+        </div>
+        {/* If there's an error, we display it */}
         {errorMessage && (
           <div>
-            <p className="is-danger">{errorMessage}</p>
+            <p className="error-text">{errorMessage}</p>
           </div>
         )}
-
-        {/* Submit button */}
-        <button className="button is-medium is-primary is-fullwidth" data-testid="button" type="submit">Submit</button>
-      </form>
-    </div>
+      </div>
+    </section>
   );
 }
 
-// Export "Contact" component
 export default Contact;

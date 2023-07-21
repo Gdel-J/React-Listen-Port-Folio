@@ -44,12 +44,63 @@ body {
     background-color: #C2E7FF;
   }
   
+  /* Add styles for contact section */
+  #reach-out {
+    padding: 2em;
+    background-color: #E6F3FF;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contact-form {
+    width: 60%;
+    margin: auto;
+  }
+  
+  .contact-form .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form .form input, .contact-form .form textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid #C2E7FF;
+  }
+  
+  .contact-form .form button {
+    padding: 0.5em;
+    background-color: #82CFFD;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .error-text {
+    color: red;
+  }
+  
   @media only screen and (max-width: 1024px) {
     main {
       margin-top: 2em;
       margin-bottom: 2em;
       margin-left: 2em;
       margin-right: 2em;
+    }
+  
+    /* Update styles for smaller screens */
+    .contact-info {
+      flex-direction: column;
+    }
+  
+    .contact-form {
+      width: 100%;
     }
   }
   

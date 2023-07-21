@@ -11,7 +11,7 @@ function Resume() {
         {/* Link to download the resume */}
         <a
           className="button is-primary"
-          href={process.env.PUBLIC_URL + "/your-resume.pdf"}
+          href={process.env.PUBLIC_URL + "/Gerard Del Vecchio RESUME.pdf"}
           target="_blank"
           rel="noreferrer"
         >
@@ -30,8 +30,10 @@ function Resume() {
         <ul>
           <li>HTML, CSS, Javascript</li>
           <li>OpenAPI, JSON</li>
-          <li>React, Next.js, </li>
-          
+          <li>SQL,Sequelize</li>
+          <li>React, Node.js, </li>
+          <li>MongoDb, Mongoose</li>
+          <li>MERN</li>
           <li>Github</li>
          
         </ul>
