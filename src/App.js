@@ -1,5 +1,4 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -8,20 +7,48 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 const App = () => {
-    return (
-        <div>
-            <Header />
-            <main>
-                <Switch>
-                    <Route exact path="/" component={About} />
-                    <Route path="/portfolio" component={Portfolio} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/resume" component={Resume} />
-                </Switch>
-            </main>
-            <Footer />
-        </div>
-    );
-}
+  const [currentPage, setCurrentPage] = useState('about');
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'about':
+        return <About />;
+      case 'portfolio':
+        return <Portfolio />;
+      case 'contact':
+        return <Contact />;
+      case 'resume':
+        return <Resume />;
+      default:
+        return <About />;
+    }
+  };
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  // Use useEffect to register the service worker on component mount
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        // Register the service worker using the service-worker.js file
+        navigator.serviceWorker.register('/service-worker.js').then(registration => {
+          console.log('Service Worker registered:', registration);
+        }).catch(error => {
+          console.log('Service Worker registration failed:', error);
+        });
+      });
+    }
+  }, []);
+
+  return (
+    <div>
+      <Header onPageChange={handlePageChange} />
+      <main>{renderPage()}</main>
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
