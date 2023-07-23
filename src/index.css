@@ -1,106 +1,199 @@
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: linear-gradient(to bottom, #C2E7FF, #82CFFD);
-  }
-  
-  .navbar, .navbar-brand {
-    text-align: center;
-    display: block;
-    width: 100%;
-    background-color: #82CFFD;
-  }
-  
-  div.navbar-brand {
-    padding-top: 2em;
-    margin-bottom: 2em;
-  }
-  
-  .navbar .navbar-brand > .navbar-item,
-  .navbar .navbar-brand .navbar-link {
-    display: inline-block;
-  }
-  
+  font-family: Work Sans, Arial, sans-serif;
+  text-align: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(17, 113, 170, 1) 44%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  max-width: 1980px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* Header styles */
+.navbar,
+.navbar-brand {
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: #82cffd;
+}
+
+div.navbar-brand {
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+
+.navbar .navbar-brand > .navbar-item,
+.navbar .navbar-brand .navbar-link {
+  display: inline-block;
+}
+
+.navigation {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+/* Add space between navbar items */
+.navbar-item {
+  display: inline-flex;
+  margin-right: 1em; /* Add margin to create space between items */
+}
+
+/* Style for the buttons */
+.nav-button {
+  background-color: #82cffd;
+  color: white;
+  padding: 0.5em 1em; /* Add padding to make the buttons more clickable */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition effect on hover */
+  justify-content: space-between;
+  margin: 0.8em;
+  border: 0.2em solid darkblue; /* Add border to the buttons */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Add box shadow to create the glow effect */
+}
+
+
+.nav-button:hover {
+  background-color: #5cb3ff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Increase the shadow on hover for stronger glow */
+}
+
+/* Main content styles */
+main {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%; /* Set the maximum width to 1980px */
+  background-color: #e6f3ff;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+/* Add styles for card images */
+.figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0; /* Add border radius to the top corners */
+}
+
+/* Add glow on hover for the cards */
+.card {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Add box shadow to create the glow effect */
+  transition: box-shadow 0.3s ease; /* Add transition to smoothly animate the glow */
+}
+
+.card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Increase the shadow on hover for stronger glow */
+}
+
+/* About section styles */
+.my-own-picture {
+  clip-path: circle();
+  width: 250px;
+}
+
+.label {
+  text-align: left;
+}
+
+/* Footer styles */
+footer.footer {
+  background-color: #c2e7ff;
+  justify-content: center;
+}
+
+/* Contact section styles */
+#reach-out {
+  padding: 2em;
+  background-color: #e6f3ff;
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form {
+  width: 60%;
+  margin: auto;
+}
+
+.contact-form .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form input,
+.contact-form .form textarea {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #c2e7ff;
+}
+
+.contact-form .form button {
+  padding: 0.5em;
+  background-color: #82cffd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error-text {
+  color: red;
+}
+
+/* Portfolio section styles */
+.columns {
+  margin: 2em;
+  padding: 1em;
+}
+
+/* Resume section styles */
+.resume .columns {
+  margin: 2em;
+  padding: 1em;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 1980px) {
   main {
     margin-top: 2em;
     margin-bottom: 2em;
-    margin-left: 30em;
-    margin-right: 30em;
-    background-color: #E6F3FF;
-    padding: 1em;
-    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px; /* Adjust the max-width as needed */
   }
-  
-  .my-own-picture {
-    clip-path: circle();
-    width: 250px;
+
+  .columns {
+    margin-left: 2em;
+    margin-right: 2em;
   }
-  
-  .label {
-    text-align: left;
-  }
-  
-  my-footer {
-    background-color: #C2E7FF;
-  }
-  
-  /* Add styles for contact section */
-  #reach-out {
-    padding: 2em;
-    background-color: #E6F3FF;
-  }
-  
+
+  /* Update styles for smaller screens */
   .contact-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .contact-form {
-    width: 60%;
-    margin: auto;
-  }
-  
-  .contact-form .form {
-    display: flex;
     flex-direction: column;
   }
-  
-  .contact-form .form input, .contact-form .form textarea {
-    margin-bottom: 1em;
-    padding: 0.5em;
-    border-radius: 5px;
-    border: 1px solid #C2E7FF;
+
+  .contact-form {
+    width: 60%;
   }
-  
-  .contact-form .form button {
-    padding: 0.5em;
-    background-color: #82CFFD;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .error-text {
-    color: red;
-  }
-  
-  @media only screen and (max-width: 1024px) {
-    main {
-      margin-top: 2em;
-      margin-bottom: 2em;
-      margin-left: 2em;
-      margin-right: 2em;
-    }
-  
-    /* Update styles for smaller screens */
-    .contact-info {
-      flex-direction: column;
-    }
-  
-    .contact-form {
-      width: 100%;
-    }
-  }
-  
+}

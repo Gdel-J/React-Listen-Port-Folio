@@ -13,17 +13,6 @@ function Footer() {
           <a href="https://github.com/Gdel-J" target="_blank" rel="noreferrer">
             Gerard DEL VECCHIO
           </a>
-          .
-          
-          <hr />
-          {/* Link to my LinkedIn profile */}
-          <a
-            href="https://www.linkedin.com/in/yourusername/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
         </p>
       </div>
     </footer>
