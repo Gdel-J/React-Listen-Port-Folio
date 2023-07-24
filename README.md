@@ -31,7 +31,7 @@ Being a web developer means being part of a community. This portfolio buid with 
 
 **repository for this application**:
 
-https://github.com/Gdel-J/
+https://github.com/Gdel-J/React-Listen-Port-Folio.git
 
 
 **link for our deployed application on gh-pages**:
@@ -58,15 +58,21 @@ https://github.com/Gdel-J/
 
 ## Usage
 
+
+
 **You may navigate to the different part of this porfolio**  
 
+![Screenshot 2023 About](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/794fc217-019e-4fdd-8bb7-b0893cf28754)
 
-
+**You may see my work**
+![Screenshot 2023 Portfolio](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/429ceb0d-95bc-4232-b7f8-89efc320a5f8)
 
 **You may contact me**
+![Screenshot 2023 Contact](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/a748c8c8-df5b-4671-a46b-b53eb14f8f1c)
 
+**You may download my resume**
 
-
+![Screenshot 2023 Resume](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/9ae867f5-2f59-4d4e-9b31-579fcc24f898)
 
 
 
