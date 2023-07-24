@@ -36,15 +36,11 @@ https://github.com/Gdel-J/React-Listen-Port-Folio.git
 
 **link for our deployed application on gh-pages**:
 
-
-
-
-
+https://gdel-j.github.io/React-Listen-Port-Folio/
 
 
 
 **In order to use this application please:**
-
 
  
 *Clone this repository 
