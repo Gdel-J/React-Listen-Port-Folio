@@ -1,14 +1,24 @@
 /* Global styles */
+:root {
+  --primary-color: #82cffd;
+  --background-gradient: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(31, 57, 99, 1) 0%,
+    rgba(34, 145, 228, 1) 100%
+  );
+  --background-gradient-start: rgba(2, 0, 36, 1);
+  --background-gradient-middle: rgba(31, 57, 99, 1);
+  --background-gradient-end: rgba(34, 145, 228, 1);
+  --footer-color: #c2e7ff;
+  --header-shine-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Define font family, text-align, background gradient, max-width, margin, and min-height for body */
 body {
   font-family: Work Sans, Arial, sans-serif;
   text-align: center;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(17, 113, 170, 1) 44%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: var(--background-gradient);
   max-width: 1980px;
   margin: 0 auto;
   min-height: 100vh;
@@ -17,20 +27,28 @@ body {
 /* Header styles */
 .navbar,
 .navbar-brand {
-  text-align: center;
   display: block;
   width: 100%;
-  background-color: #82cffd;
+  background-color: var(--primary-color);
 }
 
-div.navbar-brand {
-  padding-top: 2em;
-  margin-bottom: 2em;
+/* Create the shining animation for the header */
+@keyframes shine {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 2;
+  }
+  100% {
+    opacity: 0.9;
+  }
 }
 
-.navbar .navbar-brand > .navbar-item,
-.navbar .navbar-brand .navbar-link {
-  display: inline-block;
+/* Apply the shining effect to the header elements */
+.navbar,
+.navbar-brand {
+  animation: shine 1.5s infinite; /* Make the animation infinite */
 }
 
 .navigation {
@@ -41,12 +59,17 @@ div.navbar-brand {
 /* Add space between navbar items */
 .navbar-item {
   display: inline-flex;
-  margin-right: 1em; /* Add margin to create space between items */
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(2, 2, 96);
+  justify-content: center;
+  margin: 30px 0px 30px 0px;
 }
 
 /* Style for the buttons */
 .nav-button {
-  background-color: #82cffd;
+  background-color: var(--primary-color);
   color: white;
   padding: 0.5em 1em; /* Add padding to make the buttons more clickable */
   border: none;
@@ -58,7 +81,6 @@ div.navbar-brand {
   border: 0.2em solid darkblue; /* Add border to the buttons */
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Add box shadow to create the glow effect */
 }
-
 
 .nav-button:hover {
   background-color: #5cb3ff;
@@ -112,16 +134,23 @@ main {
 
 /* Footer styles */
 footer.footer {
-  background-color: #c2e7ff;
+  background-color: var(--footer-color);
   justify-content: center;
+  height: 60px;
 }
 
 /* Contact section styles */
 #reach-out {
   padding: 2em;
   background-color: #e6f3ff;
-  font-size: larger;
+  font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:darkblue;
+}
+
+h2 {
+
+  font-size: 40px;
 }
 
 .contact-info {
@@ -150,7 +179,7 @@ footer.footer {
 
 .contact-form .form button {
   padding: 0.5em;
-  background-color: #82cffd;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 5px;
@@ -180,7 +209,7 @@ footer.footer {
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1024px; /* Adjust the max-width as needed */
+    max-width: 1024px; 
   }
 
   .columns {

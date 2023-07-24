@@ -55,7 +55,7 @@ const projects = [
   {
     id: 5,
     title: "Sport-Spot",
-    languages: "CSS,JavaScript,MySql,Sequelize,Express.js,Node.js",
+    languages: "CSS,JavaScript,MySql,Sequelize,Express.js",
     image: "/img/Sport-Spot.png",
     description:
       "This is a full-stack CMS-style site where users can access to the last NBA game results and add comments about it",
@@ -65,7 +65,7 @@ const projects = [
   {
     id: 6,
     title: "PWA-textEditor-Challenge",
-    languages: "HTML,CSS,JavaScript",
+    languages: "HTML,CSS,JavaScript,PWA",
     image: "/img/Just-Another-text-Editor.png",
     description:
       " This  application: J.A.T.E is a Progressive Web Application (PWA),  text editor, that runs in the browser,online or offline the user can create notes the user can retrieve them for later use.",

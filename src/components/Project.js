@@ -40,8 +40,7 @@ function Project(props) {
                     {/* Display the project languages */}
                     Languages: {project.languages}
                     <br />
-                    {/* Display the project packages */}
-                    Packages: {project.packages}
+                   
                   </div>
                   <div className="card">
                     {/* Display the project links */}
@@ -53,7 +52,7 @@ function Project(props) {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        See the Repo!
+                        Look at the Repository
                       </a>
                       <br />
                       {/* Link to the live site */}

@@ -7,10 +7,10 @@ const About = () => {
       <hr />
       <img className="my-own-picture" src={process.env.PUBLIC_URL + '/img/profile.jpg'} alt="Gerard DEL VECCHIO"/>
       <p className="content is-italic mt-4">
-        Hi, I am Gerard, a student in a full stack web Developer bootcamp.
+        Hi, I am Gerard, a student in a full stack web Developer bootcamp. This is my porfolio.
       </p>
       <p className="content">
-        I am currently learning the last part (REACT,MERN,STATE) of that boot camp which is very interesting and challenging
+       Feel free to navigate to the different part of that Portfolio!!
       </p>
     </div>
   );

@@ -5,7 +5,7 @@ function Resume() {
     <div className="columns">
       {/* Column for the resume */}
       <div className="column">
-        <p className="content is-medium">Résumé</p>
+        <p className="content is-medium">RESUME</p>
         <hr />
 
         {/* Link to download the resume */}

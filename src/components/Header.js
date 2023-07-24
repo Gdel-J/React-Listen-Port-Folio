@@ -37,7 +37,7 @@ function Header() {
             href="https://github.com/Gdel-J?tab=repositories"
           >
             
-            <span className="content is-large">Gerard DEL VECCHIO</span>
+            <span className="content is-large">GERARD DEL VECCHIO</span>
           </a>
         </div>
       </nav>

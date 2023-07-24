@@ -50,7 +50,7 @@ function Contact() {
   return (
     <section id="reach-out" className="contact">
       <div className="flex-row">
-        <h2 className="section-title secondary-border">Reach Out</h2>
+        <h2 className="section-title secondary-border">CONTACT</h2>
       </div>
 
       <div className="contact-info">
@@ -58,11 +58,11 @@ function Contact() {
           <h3>Hello {userName}</h3>
           <p>Want to get into contact?</p>
           <address>
-            [Winter Springs], [FLORIDA] <br />
+            Winter Springs, FLORIDA
             <br />
             E:{" "}
             <a href="mailto://jessygddelvecchio@gmail.com">
-              [jessygddelvecchio@gmail.com]
+              jessygdelvecchio@gmail.com
             </a>
           </address>
           <p>
@@ -72,6 +72,8 @@ function Contact() {
 
         <div className="contact-form">
           <h3>Contact Me</h3>
+          <br>
+          </br>
           <form className="form">
             <label htmlFor="contact-name">Your Name</label>
             <input
