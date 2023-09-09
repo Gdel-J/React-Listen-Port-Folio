@@ -72,6 +72,16 @@ const projects = [
     repo: "https://github.com/Gdel-J/PWA-textEditor-Challenge.git",
     live: "https://pwa-texteditor-challenge777-17576331dd21.herokuapp.com/",
   },
+  {
+    id: 7,
+    title: "HypraHealthy",
+    languages: "JavaScript,node,express,React, MongoDb,Apollo,Graphql",
+    image: "/img/Hyprahealthy",
+    description:" This is a complete MERN application using Apollo server in the frontend and Graphql in the backend to help to choose healthy recipes",
+    repo: "https://github.com/Gdel-J/Hyprahealth.git",
+    live: "https://hyprahealthy-a6122d6a4506.herokuapp.com/",
+  },
+
 ];
 
 function Portfolio() {

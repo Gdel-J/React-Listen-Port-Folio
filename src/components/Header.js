@@ -1,6 +1,7 @@
 // Import required dependencies and components
 import React, { useState } from 'react';
 import Navigation from "./Navigation";
+import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
@@ -8,11 +9,13 @@ import Resume from "./Resume";
 
 function Header() {
   // useState hook to set the initial page to "About" and create a function to change the state
-  const [currentPage, handlePageChange] = useState("About");
+  const [currentPage, handlePageChange] = useState("Home");
 
   // The renderPage method uses a switch statement to render the appropriate current page
   const renderPage = () => {
     switch (currentPage) {
+      case "Home":
+        return <Home />;
       case "About":
         return <About />;
       case "Portfolio":

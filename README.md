@@ -9,7 +9,6 @@
 Being a web developer means being part of a community. This portfolio buid with react will be a  way to share my work with fellow developers and collaborate on future projects. Futhermore, it will be a place  to  apply for jobs.
 
 
-
 ## Table of Contents 
  
 - [React-Listen-Port-Folio](#react-listen-port-folio)
@@ -37,7 +36,6 @@ https://github.com/Gdel-J/React-Listen-Port-Folio.git
 **link for our deployed application on gh-pages**:
 
 https://gdel-j.github.io/React-Listen-Port-Folio/
-
 
 
 **In order to use this application please:**

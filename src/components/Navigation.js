@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navigation({ currentPage, handlePageChange }) {
   // An array of navigation items
-  const navItems = ['About', 'Portfolio', 'Contact', 'Resume'];
+  const navItems = ['Home','About', 'Portfolio', 'Contact', 'Resume'];
 
   return (
     <nav>
