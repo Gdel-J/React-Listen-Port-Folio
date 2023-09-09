@@ -30,6 +30,10 @@ body {
   display: block;
   width: 100%;
   background-color: var(--primary-color);
+  background-image: url('./images/header-background.jpg'); /* Update the path to your image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Create the shining animation for the header */
@@ -86,6 +90,66 @@ body {
   background-color: #5cb3ff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Increase the shadow on hover for stronger glow */
 }
+
+/* Add animation keyframes for sliding in from the right with delay */
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(400%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply the slide-in animation to navigation items with a delay */
+.nav-button:not(.active):nth-child(1) {
+  animation: slideInFromRight 2.5s ease forwards 0.2s; /* Add a delay of 0.2s for the first item */
+}
+
+.nav-button:not(.active):nth-child(2) {
+  animation: slideInFromRight 2.5s ease forwards 0.4s; /* Add a delay of 0.4s for the second item */
+}
+
+.nav-button:not(.active):nth-child(3) {
+  animation: slideInFromRight 2.5s ease forwards 0.6s; /* Add a delay of 0.6s for the third item */
+}
+
+.nav-button:not(.active):nth-child(4) {
+  animation: slideInFromRight 2.5s ease forwards 0.8s; /* Add a delay of 0.8s for the fourth item */
+}
+
+.nav-button:not(.active):nth-child(5) {
+  animation: slideInFromRight 2.5s ease forwards 1s; /* Add a delay of 1s for the fifth item */
+}
+
+/* Add animation keyframes for displaying your name */
+@keyframes showName {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to the name in the header */
+.header-name {
+  animation: showName 3s ease; /* Adjust duration and easing as needed */
+  display: inline-block; /* Ensure that your name stays centered */
+  font-size: 48px; /* Change the font size to your desired value */
+}
+
+/* Apply the slide-in animation to navigation items with a delay */
+.nav-button:not(.active).slide-in,
+.nav-button.home-button {
+  animation: slideInFromRight 3.5s ease forwards;
+}
+
+
 
 /* Main content styles */
 main {
@@ -145,11 +209,10 @@ footer.footer {
   background-color: #e6f3ff;
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color:darkblue;
+  color: darkblue;
 }
 
 h2 {
-
   font-size: 40px;
 }
 
@@ -209,7 +272,7 @@ h2 {
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1024px; 
+    max-width: 1024px;
   }
 
   .columns {

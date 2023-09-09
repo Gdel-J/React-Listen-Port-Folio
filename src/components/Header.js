@@ -1,28 +1,30 @@
-// Import required dependencies and components
 import React, { useState } from 'react';
-import Navigation from "./Navigation";
-import Home from "./Home";
-import About from "./About";
-import Contact from "./Contact";
-import Portfolio from "./Portfolio";
-import Resume from "./Resume";
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
+import Portfolio from './Portfolio';
+import Resume from './Resume';
 
 function Header() {
-  // useState hook to set the initial page to "About" and create a function to change the state
-  const [currentPage, handlePageChange] = useState("Home");
+  const navItems = ['Home', 'About', 'Portfolio', 'Contact', 'Resume'];
+  const [currentPage, setCurrentPage] = useState('Home');
 
-  // The renderPage method uses a switch statement to render the appropriate current page
+  const handlePageChange = (event, item) => {
+    event.stopPropagation();
+    setCurrentPage(item);
+  };
+
   const renderPage = () => {
     switch (currentPage) {
-      case "Home":
+      case 'Home':
         return <Home />;
-      case "About":
+      case 'About':
         return <About />;
-      case "Portfolio":
+      case 'Portfolio':
         return <Portfolio />;
-      case "Contact":
+      case 'Contact':
         return <Contact />;
-      case "Resume":
+      case 'Resume':
         return <Resume />;
       default:
         return <About />;
@@ -39,17 +41,26 @@ function Header() {
             target="_blank"
             href="https://github.com/Gdel-J?tab=repositories"
           >
-            
-            <span className="content is-large">GERARD DEL VECCHIO</span>
+            <span className="content is-large">
+              <div className="header-name-container">
+                <span className="header-name">GERARD DEL VECCHIO</span>
+              </div>
+            </span>
           </a>
         </div>
+        <ul className="navigation">
+          {navItems.map((item, index) => (
+            <li key={item}>
+              <button
+                className={`nav-button ${currentPage === item ? 'active' : ''} ${index !== 0 ? 'slide-in' : ''} ${item === 'Home' ? 'home-button' : ''}`}
+                onClick={(event) => handlePageChange(event, item)}
+              >
+                {item}
+              </button>
+            </li>
+          ))}
+        </ul>
       </nav>
-      {/* Pass the state value and the setter as props to NavTabs */}
-      <Navigation
-        currentPage={currentPage}
-        handlePageChange={handlePageChange}
-      />
-      {/* Call the renderPage function passing in the currentPage */}
       <main>
         <div>{renderPage(currentPage)}</div>
       </main>
