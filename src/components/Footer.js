@@ -6,14 +6,27 @@ function Footer() {
     <footer className="footer">
       {/* Content section centered in the footer */}
       <div className="content has-text-centered">
-        <p>
-          {/* Strong emphasis on "My REACT Portfolio" */}
-          <strong>My REACT Portfolio</strong> - a React site by{" "}
-          {/* Link to my GitHub profile */}
-          <a href="https://github.com/Gdel-J" target="_blank" rel="noreferrer">
-            Gerard DEL VECCHIO
+        
+      
+        {/* Add GitHub and LinkedIn icons and links */}
+        <div className="social-icons">
+          <a
+            href="https://github.com/Gdel-J"
+            target="_blank"
+            rel="noreferrer"
+            className="icon-link"
+          >
+            <i className="fab fa-github"></i> GitHub
           </a>
-        </p>
+          <a
+            href="https://www.linkedin.com/in/gerard-del-vecchio-39a231285/"
+            target="_blank"
+            rel="noreferrer"
+            className="icon-link"
+          >
+            <i className="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
       </div>
     </footer>
   );

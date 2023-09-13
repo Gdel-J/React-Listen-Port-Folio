@@ -11,17 +11,15 @@ function Contact() {
 
   // This function handles input changes for all the form fields
   const handleInputChange = (e) => {
-    const { target } = e; // Destructuring the target from the event
-    const inputType = target.name; // The name of the input field that triggered the change
-    const inputValue = target.value; // The value of the input field that triggered the change
+    const { name, value } = e.target; // Destructure the name and value from the event target
 
     // Based on the input field name, we update the corresponding state variable
-    if (inputType === "email") {
-      setEmail(inputValue);
-    } else if (inputType === "userName") {
-      setUserName(inputValue);
+    if (name === "email") {
+      setEmail(value);
+    } else if (name === "userName") {
+      setUserName(value);
     } else {
-      setMessage(inputValue);
+      setMessage(value);
     }
   };
 
@@ -41,10 +39,12 @@ function Contact() {
       return; // We exit the function if there's an error
     }
 
-    // If there's no error, we clear the form fields
+    // If there's no error, you can handle the form data as needed.
+    // Here, we just clear the form fields and display a success message.
     setUserName("");
     setMessage("");
     setEmail("");
+    setErrorMessage("Message sent successfully!"); // You can customize this message.
   };
 
   return (
@@ -72,8 +72,7 @@ function Contact() {
 
         <div className="contact-form">
           <h3>Contact Me</h3>
-          <br>
-          </br>
+          <br />
           <form className="form">
             <label htmlFor="contact-name">Your Name</label>
             <input
@@ -100,11 +99,10 @@ function Contact() {
               value={message}
               name="message"
               onChange={handleInputChange}
-              type="message"
               id="contact-message"
               placeholder="Your Message"
             />
-            <button type="button" onClick={handleFormSubmit}>
+            <button type="submit" onClick={handleFormSubmit}>
               Submit
             </button>
           </form>

@@ -1,16 +1,14 @@
 import React from 'react';
 
 const About = () => {
-    return (
+  return (
     <div>
-      <p className="content is-medium">Full stack Web developer</p>
-      
-      <img className="my-own-picture" src={process.env.PUBLIC_URL + '/img/profile.jpg'} alt="Gerard DEL VECCHIO"/>
-      <p className="content is-italic mt-4">
-        Hi, I am Gerard, Full Stack Web developer .
-      </p>
-      <p className="content">
-       Feel free to navigate to the different part of that Portfolio!!
+      <p className="content is-medium">
+        Full Stack Web Developer with a unique background in intensive care, applying that same intensity to innovate and elevate web applications and software platforms. Certified in Full Stack Web Development from the University of Central Florida Coding Boot Camp.
+        <br/><br/>
+        Dedicated, solution-driven, and deeply enthusiastic about web application development.
+        <br/><br/>
+        My strengths lie in problem-solving, communication, adaptability, and fostering strong teamwork. I am continuously seeking opportunities to enhance my skills in web development languages and associated technologies.
       </p>
     </div>
   );

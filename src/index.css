@@ -148,20 +148,57 @@ body {
 .nav-button.home-button {
   animation: slideInFromRight 3.5s ease forwards;
 }
-
-
-
 /* Main content styles */
 main {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
   max-width: 60%; /* Set the maximum width to 1980px */
   background-color: #e6f3ff;
-  padding: 1em;
+  padding: 0.2em;
   border-radius: 10px;
 }
+
+.home-container {
+  background-image: url("../src/images/HomeBackground6.jpg"); /* Replace with the actual path to your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Set the height to 100% to fill the entire parent (main) */
+  max-width: 100%;
+ 
+}
+
+.left-section {
+  flex: 1; /* Take up available space in the flex container */
+}
+
+.right-section {
+  flex: 2; /* Take up twice as much space as the left section */
+  text-align: right; /* Align text to the right */
+}
+
+.my-own-picture {
+  width: 100%;
+  max-width: 400px; /* Adjust the max width as needed */
+  height: auto;
+}
+
+.content01 {
+  font-size: 3rem; /* Set font size to make it very big */
+  /* Other styles */
+}
+
+.content02 {
+  font-size: 3rem; /* Set font size for the second paragraph */
+  /* Other styles */
+}
+
 
 /* Add styles for card images */
 .figure {
@@ -198,10 +235,31 @@ main {
 
 /* Footer styles */
 footer.footer {
-  background-color: var(--footer-color);
+ background-color:  #1c478d;
   justify-content: center;
-  height: 60px;
+  height: 20px;
+  font-size: 25px;
+  
 }
+/* Add styles for social icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.icon-link {
+  margin: 0 10px;
+  color: #333; /* Icon color */
+  text-decoration: none;
+  font-size: 30px; /* Icon size */
+  transition: color 0.3s ease; /* Transition effect for icon color on hover */
+
+  /* Add any additional styling as needed */
+}
+
+.icon-link:hover {
+  color: #0077b5; /* Change icon color on hover */
+}
+
 
 /* Contact section styles */
 #reach-out {
@@ -272,7 +330,7 @@ h2 {
     margin-bottom: 2em;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1024px;
+    max-width: 1440px;
   }
 
   .columns {
