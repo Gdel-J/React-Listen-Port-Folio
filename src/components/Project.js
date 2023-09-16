@@ -1,18 +1,54 @@
-import React from "react";
+
+import React, { useEffect, useRef } from "react";
 
 function Project(props) {
+  
+  const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const currentRefs = cardRefs.current;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1
+    });
+
+    currentRefs.forEach((cardRef) => {
+      if (cardRef instanceof Element) {
+        observer.observe(cardRef);
+      }
+    });
+    
+    return () => {
+      currentRefs.forEach((cardRef) => {
+        if (cardRef instanceof Element) {
+          observer.unobserve(cardRef);
+        }
+      });
+    };
+    
+  }, []);
+
   return (
     <div>
-      {/* Use the columns class from Bulma to create a responsive grid */}
       <div className="columns is-desktop is-justify-content-center is-flex-wrap-wrap is-flex-direction-row">
-        {props.projects.map((project) => (
-          <div className="column is-half" key={project.id}>
-            {/* Render a card for each project */}
+        {props.projects.map((project, index) => (
+          <div
+            className="column is-half lazy-load fade-in"
+            key={project.id}
+            ref={el => cardRefs.current[index] = el}
+            style={{ animationDelay: `${index * 0.2}s` }}
+          >
             <div className="card">
-              {/* Display the project image */}
               <div className="card-image">
                 <figure className="image is-4by3">
-                  {/* Link the image to the live site */}
                   <a href={project.live} target="_blank" rel="noreferrer">
                     <img
                       src={process.env.PUBLIC_URL + project.image}
@@ -21,31 +57,23 @@ function Project(props) {
                   </a>
                 </figure>
               </div>
-              {/* Display the project details */}
               <div className="card-content">
                 <div className="media">
                   <div className="media-left"></div>
                   <div className="media-content">
-                    {/* Display the project title */}
                     <p className="title is-4">{project.title}</p>
                   </div>
                 </div>
-
                 <div className="content has-text-left">
-                  {/* Display the project description */}
                   {project.description}
                   <br />
                   <br />
                   <div className="content is-family-code">
-                    {/* Display the project languages */}
                     Languages: {project.languages}
                     <br />
-                   
                   </div>
                   <div className="card">
-                    {/* Display the project links */}
                     <footer className="card-footer">
-                      {/* Link to the GitHub repository */}
                       <a
                         href={project.repo}
                         className="card-footer-item"
@@ -54,8 +82,6 @@ function Project(props) {
                       >
                         Look at the Repository
                       </a>
-                      <br />
-                      {/* Link to the live site */}
                       <a
                         href={project.live}
                         className="card-footer-item"
@@ -74,6 +100,7 @@ function Project(props) {
       </div>
     </div>
   );
+  
 }
 
 export default Project;
