@@ -17,7 +17,7 @@ const About = () => {
       backDelay: 1000,
       startDelay: 500,
       showCursor: true,
-      loop: false
+      loop: true
     };
 
     const typed = new Typed(el.current, options);
@@ -30,7 +30,8 @@ const About = () => {
   return (
     <div className="app-container">
       <div className="main-content">
-        <span className="content is-medium" ref={el}></span>
+      <span className="content is-medium about-content" ref={el}></span>
+
       </div>
     </div>
   );
