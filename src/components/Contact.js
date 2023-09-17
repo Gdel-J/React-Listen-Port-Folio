@@ -11,7 +11,7 @@ function Contact() {
       <div className="contact-info">
         <ContactCube />
         <div>
-          <h3>Please Contact Me</h3>
+          <h3>Please click on the cube's icons or footer's icons to contact Me</h3>
         </div>
       </div>
     </section>

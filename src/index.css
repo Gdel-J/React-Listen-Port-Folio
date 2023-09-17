@@ -13,6 +13,7 @@
 }
 
 
+
 /* BODY styles  */
 
 body {
@@ -27,7 +28,7 @@ body {
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 50vh;
+  min-height: 65vh; /* Changes here */
 }
 
 /* HEADER styles and animation */
@@ -174,6 +175,8 @@ main {
   background-color: #e6f3ff;
   padding: 0.2em;
   border-radius: 10px;
+  min-height: 65vh;
+  
 }
 
 .home-container {
@@ -185,7 +188,7 @@ main {
   flex-direction: column; /* Change to column layout */
   justify-content: center;
   align-items: center;
-  height: 100%; /* Set the height to 100% to fill the entire parent (main) */
+  min-height: 65vh; /* Set the height to 100% to fill the entire parent (main) */
   max-width: 100%;
  
 }
@@ -209,14 +212,33 @@ main {
 
 
 .content01 {
-  font-size: 3rem; /* Set font size to make it very big */
-  /* Other styles */
+  text-shadow: 1px 1px 0 #007FFF,    /* Azure */
+               2px 2px 0 #4169E1,    /* RoyalBlue */
+               3px 3px 0 #4682B4,    /* SteelBlue */
+               4px 4px 0 #1E90FF,    /* DodgerBlue */
+               5px 5px 0 #00BFFF,    /* DeepSkyBlue */
+               6px 6px 0 #87CEEB,    /* SkyBlue */
+               7px 7px 0 #87CEFA,    /* LightSkyBlue */
+               8px 8px 7px rgba(0, 0, 255, 0.4), /* RGBA Blue */
+               8px 8px 1px rgba(0, 0, 255, 0.5), /* RGBA Blue */
+               0 0 7px rgba(0, 0, 255, 0.2);    /* RGBA Blue */
+  font-size: 3rem;
 }
 
 .content02 {
-  font-size: 3rem; /* Set font size for the second paragraph */
-  /* Other styles */
+  text-shadow: 1px 1px 0 #007FFF,    /* Azure */
+               2px 2px 0 #4169E1,    /* RoyalBlue */
+               3px 3px 0 #4682B4,    /* SteelBlue */
+               4px 4px 0 #1E90FF,    /* DodgerBlue */
+               5px 5px 0 #00BFFF,    /* DeepSkyBlue */
+               6px 6px 0 #87CEEB,    /* SkyBlue */
+               7px 7px 0 #87CEFA,    /* LightSkyBlue */
+               8px 8px 7px rgba(0, 0, 255, 0.4), /* RGBA Blue */
+               8px 8px 1px rgba(0, 0, 255, 0.5), /* RGBA Blue */
+               0 0 7px rgba(0, 0, 255, 0.2);    /* RGBA Blue */
+  font-size: 3rem;
 }
+
 
 
 /* Add styles for card images */
@@ -277,7 +299,11 @@ main {
   color: rgb(64, 64, 226);
 }
 
-
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 65vh; /* Changes here */
+}
 
 /* CONTACT component */
 .contact {
@@ -296,6 +322,11 @@ main {
   color: #007bff; /* Change color on hover */
 }
 
+h2, h3 {
+  font-size: 25px;
+  color: rgb(243, 245, 231);
+
+}
 
 /* Styles for the ContactCube component */
 .contact-cube-container {
