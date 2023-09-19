@@ -175,7 +175,7 @@ main {
   background-color: #e6f3ff;
   padding: 0.2em;
   border-radius: 10px;
-  min-height: 65vh;
+  min-height: 62vh;
   
 }
 
@@ -417,7 +417,7 @@ h2, h3 {
 @keyframes fadeInUp {
   from {
       opacity: 0;
-      transform: translateY(40px);
+      transform: translateY(20px);
   }
   to {
       opacity: 1;
@@ -439,9 +439,10 @@ h2, h3 {
 
 /* Portfolio section styles */
 .columns {
-  margin: 2em;
-  padding: 1em;
+  margin: 1em;
+  padding: 2.5em;
 }
+ 
 
 
 /* RESUME section styles */

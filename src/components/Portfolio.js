@@ -26,7 +26,7 @@ const projects = [
     id: 2,
     title: "Weather-Dashboard",
     languages: "HTML,CSS,JavaScript,Server Side API",
-    image: "/img/Weather-Dashboard.png",
+    image: "/img/Weather-Dashboard2.png",
     description:
       "This is an application that allows users to search for a city to get the current weather and 5 day forecast. ",
     repo: "https://github.com/Gdel-J/Weather-Dashboard.git",
@@ -46,11 +46,11 @@ const projects = [
     id: 4,
     title: "MVC-Tech-Blog",
     languages: "HTML,CSS,JavaScript,MVC",
-    image: "/img/MVC-note-taker.png",
+    image: "/img/MVC.png",
     description:
       "This is a full-stack CMS-style blog site where users can publish posts",
     repo: "https://github.com/Gdel-J/MVC-Tech-Blog.git",
-    live: "https://mymvctechblog39.herokuapp.com/",
+    live: "https://mymvctechblog777-91a7da73e3ed.herokuapp.com/",
   },
   {
     id: 5,
