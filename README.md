@@ -48,27 +48,21 @@ https://gdel-j.github.io/React-Listen-Port-Folio/
 *Start application with `npm run start`
 
 
-
-
 ## Usage
 
 
 
 **You may navigate to the different part of this porfolio**  
 
-![Screenshot 2023 About](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/794fc217-019e-4fdd-8bb7-b0893cf28754)
+![Screenshot 1](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/0432f03b-b6c7-414e-95cc-4e48462c886e)
 
 **You may see my work**
-![Screenshot 2023 Portfolio](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/429ceb0d-95bc-4232-b7f8-89efc320a5f8)
+
+![Screenshot 2](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/72970ebd-a065-4a6f-b5d6-24162a00b01a)
 
 **You may contact me**
-![Screenshot 2023 Contact](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/a748c8c8-df5b-4671-a46b-b53eb14f8f1c)
 
-**You may download my resume**
-
-![Screenshot 2023 Resume](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/9ae867f5-2f59-4d4e-9b31-579fcc24f898)
-
-
+![Screenshot 3](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/c9c9fe96-6335-424b-9a12-8c979b7dbc5a)
 
 ## License
 
