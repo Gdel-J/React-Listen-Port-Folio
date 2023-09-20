@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/React-Listen-Port-Folio/static/css/main.36feae65.chunk.css",
+    "main.js": "/React-Listen-Port-Folio/static/js/main.beb15895.chunk.js",
+    "main.js.map": "/React-Listen-Port-Folio/static/js/main.beb15895.chunk.js.map",
+    "runtime-main.js": "/React-Listen-Port-Folio/static/js/runtime-main.4fc96014.js",
+    "runtime-main.js.map": "/React-Listen-Port-Folio/static/js/runtime-main.4fc96014.js.map",
+    "static/js/2.8b0f5f54.chunk.js": "/React-Listen-Port-Folio/static/js/2.8b0f5f54.chunk.js",
+    "static/js/2.8b0f5f54.chunk.js.map": "/React-Listen-Port-Folio/static/js/2.8b0f5f54.chunk.js.map",
+    "index.html": "/React-Listen-Port-Folio/index.html",
+    "static/css/main.36feae65.chunk.css.map": "/React-Listen-Port-Folio/static/css/main.36feae65.chunk.css.map",
+    "static/js/2.8b0f5f54.chunk.js.LICENSE.txt": "/React-Listen-Port-Folio/static/js/2.8b0f5f54.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/React-Listen-Port-Folio/static/media/header-background.988b85a1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4fc96014.js",
+    "static/js/2.8b0f5f54.chunk.js",
+    "static/css/main.36feae65.chunk.css",
+    "static/js/main.beb15895.chunk.js"
+  ]
+}
