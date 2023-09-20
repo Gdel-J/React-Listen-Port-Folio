@@ -1,6 +1,7 @@
 {
     "name": "react-listen-port-folio",
     "version": "1.0.0",
+    "homepage": "http://Gdel-J.github.io/React-Listen-Port-Folio",
     "description": "React Portfolio",
     "private": true,
     "dependencies": {
@@ -11,11 +12,10 @@
         "react-scripts": "4.0.3",
         "typed.js": "^2.0.16"
     },
-    "homepage": "http://Gdel-J.github.io/React-Listen-Port-Folio",
     "scripts": {
-        "start": "react-scripts start",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
+        "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
