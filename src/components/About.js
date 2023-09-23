@@ -8,7 +8,7 @@ const About = () => {
   useEffect(() => {
     const options = {
       strings: [
-        'Full Stack Web Developer with a unique background in intensive care, applying that same intensity to innovate and elevate web applications and software platforms. Certified in Full Stack Web Development from the University of Central Florida Coding Boot Camp.',
+        'Full Stack Web Developer with a unique background in intensive care, applying that same intensity to innovate and elevate web applications and software platforms. Certified in Full Stack Web Development from the University of Central Florida .',
         'Dedicated, solution-driven, and deeply enthusiastic about web application development.',
         'My strengths lie in problem-solving, communication, adaptability, and fostering strong teamwork. I am continuously seeking opportunities to enhance my skills in web development languages and associated technologies.'
       ],

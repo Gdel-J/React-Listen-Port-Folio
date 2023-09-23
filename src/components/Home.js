@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <p className="content01 is-medium">Hi! I am Gerard!</p>
-      <img className="my-own-picture" src={process.env.PUBLIC_URL + '/img/ForLinkedInProfile05.jpg'} alt="Gerard DEL VECCHIO"/>
+      <img className="my-own-picture" src={process.env.PUBLIC_URL + '/img/ForLinkedInProfile05.jpg'} alt="ForLinkedInProfile05.jpg"/>
       <p className="content01 is-medium">A Full Stack Web developer</p>
       <p className="content02">This is my Portfolio!</p>
     </div>
