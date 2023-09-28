@@ -20,18 +20,18 @@ function ContactCube() {
   );
 }
 
-function ContentForFace({ face }) {
-  const contentMap = {
-    1: { link: 'https://github.com/Gdel-J', label: 'GitHub', iconClass: 'fab fa-github' },
-    2: { link: 'https://www.linkedin.com/in/gerard-del-vecchio-39a231285/', label: 'LinkedIn', iconClass: 'fab fa-linkedin' },
-    3: { link: 'mailto:jessygdelvecchio@gmail.com', label: 'Email', iconClass: 'fas fa-envelope' },
-    4: { link: 'https://github.com/Gdel-J', label: 'GitHub', iconClass: 'fab fa-github' },
-    5: { link: 'https://www.linkedin.com/in/gerard-del-vecchio-39a231285/', label: 'LinkedIn', iconClass: 'fab fa-linkedin' },
-    6: { link: 'mailto:jessygdelvecchio@gmail.com', label: 'Email', iconClass: 'fas fa-envelope' },
-  };
+const contentMap = {
+  1: { link: 'https://github.com/Gdel-J', label: 'GitHub', iconClass: 'fab fa-github', fontSize: '1.4em' },
+  2: { link: 'https://www.linkedin.com/in/gerard-del-vecchio-39a231285/', label: 'LinkedIn', iconClass: 'fab fa-linkedin', fontSize: '1.4em' },
+  3: { link: 'mailto:jessygdelvecchio@gmail.com', label: 'jessygdelvecchio@gmail.com', iconClass: 'fas fa-envelope', fontSize: '0.4em' },
+  4: { link: 'https://github.com/Gdel-J', label: 'GitHub', iconClass: 'fab fa-github', fontSize: '1.4em' },
+  5: { link: 'https://www.linkedin.com/in/gerard-del-vecchio-39a231285/', label: 'LinkedIn', iconClass: 'fab fa-linkedin', fontSize: '1.4em' },
+  6: { link: 'mailto:jessygdelvecchio@gmail.com', label: 'jessygdelvecchio@gmail.com', iconClass: 'fas fa-envelope', fontSize: '0.4em' },
+};
 
+function ContentForFace({ face }) {
   return (
-    <a href={contentMap[face].link} target="_blank" rel="noreferrer">
+    <a href={contentMap[face].link} target="_blank" rel="noreferrer" style={{ fontSize: contentMap[face].fontSize }}>
       <i className={contentMap[face].iconClass}></i> {contentMap[face].label}
     </a>
   );
