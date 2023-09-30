@@ -26,7 +26,7 @@ const projects = [
     id: 2,
     title: "Weather-Dashboard",
     languages: "HTML,CSS,JavaScript,Server Side API",
-    image: "/img/Weather-Dashboard2.png",
+    image: "/img/Weather-dashboard2.png",
     description:
       "This is an application that allows users to search for a city to get the current weather and 5 day forecast. ",
     repo: "https://github.com/Gdel-J/Weather-Dashboard.git",
@@ -76,7 +76,7 @@ const projects = [
     id: 7,
     title: "HypraHealthy",
     languages: "JavaScript,node,express,React, MongoDb,Apollo,Graphql",
-    image: process.env.PUBLIC_URL + "/img/HypraHealthy.png",
+    image: "/img/HypraHealthy.png",
     description:" This is a complete MERN application using Apollo server in the frontend and Graphql in the backend to help to choose healthy recipes",
     repo: "https://github.com/Gdel-J/Hyprahealth.git",
     live: "https://hyprahealthy-a6122d6a4506.herokuapp.com/",
