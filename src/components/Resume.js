@@ -49,7 +49,7 @@ function Resume() {
           <li className="skill-item">React, Node.js</li>
           <li className="skill-item">MongoDb, Mongoose</li>
           <li className="skill-item">MERN</li>
-          <li className="skill-item">Github</li>
+          <li className="skill-item">Github, VS Code</li>
         </ul>
       </div>
     </div>
