@@ -11,7 +11,7 @@ function Resume() {
         {/* Button to download the resume */}
         <a
           className="button is-primary"
-          href={process.env.PUBLIC_URL + "/GERARD DEL VECCHIO last updated resume september 2023.pdf"}
+          href={process.env.PUBLIC_URL + "/GERARD DEL VECCHIO RESUME.pdf"}
           target="_blank"
           rel="noreferrer"
         >
@@ -24,7 +24,7 @@ function Resume() {
         {/* Button to view the resume on Google Drive */}
         <a
           className="button is-link google-drive-link" 
-          href="https://docs.google.com/document/d/1Z-et4KT5OuYqrD1QDwevCp8-R4Zdlpwm8gllhGTQ1AA/edit?usp=sharing"
+          href="https://drive.google.com/file/d/1AnM-XjxPdZ3Uo7Y6FrTNlH9Rb7wDSNeL/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           style={{ marginLeft: '10px' }} // Added a margin for spacing between buttons
