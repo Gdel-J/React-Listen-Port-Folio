@@ -13,7 +13,7 @@ function Resume() {
           className="button is-primary"
           href={
             process.env.PUBLIC_URL +
-            "/Gerard Del Vecchio resume octobre 2023 .pdf"
+            "/Gerard Del Vecchio resume octobre 2023.pdf"
           }
           target="_blank"
           rel="noreferrer"
