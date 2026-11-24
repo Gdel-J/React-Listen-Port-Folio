@@ -22,10 +22,10 @@ function ContactCube() {
 
 const contentMap = {
   1: { link: 'https://github.com/Gdel-J', label: 'GitHub', iconClass: 'fab fa-github', fontSize: '1.4em' },
-  2: { link: 'https://www.linkedin.com/in/gerard-del-vecchio-39a231285/', label: 'LinkedIn', iconClass: 'fab fa-linkedin', fontSize: '1.4em' },
+  2: { link: 'https://www.linkedin.com/in/gerard-d-39a231285/', label: 'LinkedIn', iconClass: 'fab fa-linkedin', fontSize: '1.4em' },
   3: { link: 'mailto:jessygdelvecchio@gmail.com', label: 'jessygdelvecchio@gmail.com', iconClass: 'fas fa-envelope', fontSize: '0.4em' },
   4: { link: 'https://github.com/Gdel-J', label: 'GitHub', iconClass: 'fab fa-github', fontSize: '1.4em' },
-  5: { link: 'https://www.linkedin.com/in/gerard-del-vecchio-39a231285/', label: 'LinkedIn', iconClass: 'fab fa-linkedin', fontSize: '1.4em' },
+  5: { link: 'https://www.linkedin.com/in/gerard-d-39a231285/', label: 'LinkedIn', iconClass: 'fab fa-linkedin', fontSize: '1.4em' },
   6: { link: 'mailto:jessygdelvecchio@gmail.com', label: 'jessygdelvecchio@gmail.com', iconClass: 'fas fa-envelope', fontSize: '0.4em' },
 };
 

@@ -1,91 +1,27 @@
-# React-Listen-Port-Folio
+# Gerard Del Vecchio · Software portfolio
 
+I built this portfolio in React during the University of Central Florida’s 2023 full-stack coding boot camp. It brings together eight projects, from a JavaScript quiz to a full-stack application for finding recipes.
 
-![MIT](https://img.shields.io/badge/license-MIT-green)
+[Open the portfolio](https://gdel-j.github.io/React-Listen-Port-Folio/)
 
+## Selected work
 
-## Description
+| Weather Dashboard | Work Day Scheduler |
+| --- | --- |
+| [![Weather Dashboard showing a city forecast](public/img/Weather-dashboard2.png)](https://github.com/Gdel-J/Weather-Dashboard) | [![Work Day Scheduler showing time blocks](public/img/Work-Day-Scheduler.png)](https://github.com/Gdel-J/Work-day-Scheduler) |
+| Search by city for current conditions and a five-day forecast. | Plan a working day in hourly time blocks. |
 
-Being a web developer means being part of a community. This portfolio buid with react will be a  way to share my work with fellow developers and collaborate on future projects. Futhermore, it will be a place  to  apply for jobs.
+The portfolio’s project cards link to the original repositories, including the teams behind the collaborative projects. The [project list](src/components/Portfolio.js) contains the descriptions and links for all eight.
 
+## Run locally
 
-## Table of Contents 
- 
-- [React-Listen-Port-Folio](#react-listen-port-folio)
-  - [Description](#description)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [How to Contribute](#how-to-contribute)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  - [Features](#features)
-  - [Credits](#credits)
+```sh
+git clone https://github.com/Gdel-J/React-Listen-Port-Folio.git
+cd React-Listen-Port-Folio
+npm ci
+npm start
+```
 
+Open [localhost:3000](http://localhost:3000) in your browser. Run `npm run build` to create the production site in `build/`.
 
-
-## Installation
-
-
-**repository for this application**:
-
-https://github.com/Gdel-J/React-Listen-Port-Folio.git
-
-
-**link for our deployed application on gh-pages**:
-
-https://gdel-j.github.io/React-Listen-Port-Folio/
-
-
-**In order to use this application please:**
-
- 
-*Clone this repository 
-
-*Run npm i to install all dependencies
-
-*Start application with `npm run start`
-
-
-## Usage
-
-
-
-**You may navigate to the different part of this porfolio**  
-
-![Screenshot 1](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/0432f03b-b6c7-414e-95cc-4e48462c886e)
-
-**You may see my work**
-
-![Screenshot 2](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/72970ebd-a065-4a6f-b5d6-24162a00b01a)
-
-**You may contact me**
-
-![Screenshot 3](https://github.com/Gdel-J/React-Listen-Port-Folio/assets/120201085/c9c9fe96-6335-424b-9a12-8c979b7dbc5a)
-
-## License
-
-This project is licensed under the MIT license.
-
-## How to Contribute
-
-Please contact me
-
-## Tests
-
-N/A
-
-## Questions
-
-If you have any questions about this repository, you might want to open an issue or contact me  at 
- at [My GitHub](https://github.com/Gdel-J).
-
-## Features
-
-N/A
-
-
-## Credits
-
-This application has been made by Gérard Del Vecchio, during the FSF UCF bootcamp program 2023.
+[MIT license](LICENSE)

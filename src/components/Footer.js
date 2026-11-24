@@ -19,7 +19,7 @@ function Footer() {
             <i className="fab fa-github"></i> GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/gerard-del-vecchio-39a231285/"
+            href="https://www.linkedin.com/in/gerard-d-39a231285/"
             target="_blank"
             rel="noreferrer"
             className="icon-link"
