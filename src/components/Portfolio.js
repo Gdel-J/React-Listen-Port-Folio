@@ -50,7 +50,6 @@ const projects = [
     description:
       "This is a full-stack CMS-style blog site where users can publish posts",
     repo: "https://github.com/Gdel-J/MVC-Tech-Blog.git",
-    live: "https://mymvctechblog777-91a7da73e3ed.herokuapp.com/",
   },
   {
     id: 5,
@@ -60,7 +59,6 @@ const projects = [
     description:
       "This is a full-stack CMS-style site where users can access to the last NBA game results and add comments about it",
     repo: "https://github.com/restas13/sport-spot.git",
-    live: "https://sport-spot-group7.herokuapp.com/",
   },
   {
     id: 6,
@@ -70,7 +68,6 @@ const projects = [
     description:
       " This  application: J.A.T.E is a Progressive Web Application (PWA),  text editor, that runs in the browser,online or offline the user can create notes the user can retrieve them for later use.",
     repo: "https://github.com/Gdel-J/PWA-textEditor-Challenge.git",
-    live: "https://pwa-texteditor-challenge777-17576331dd21.herokuapp.com/",
   },
   {
     id: 7,
@@ -79,7 +76,6 @@ const projects = [
     image: "/img/HypraHealthy.png",
     description:" This is a complete MERN application using Apollo server in the frontend and Graphql in the backend to help to choose healthy recipes",
     repo: "https://github.com/Gdel-J/Hyprahealth.git",
-    live: "https://hyprahealthy-a6122d6a4506.herokuapp.com/",
   },
 
 ];

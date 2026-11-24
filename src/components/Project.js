@@ -49,10 +49,10 @@ function Project(props) {
             <div className="card">
               <div className="card-image">
                 <figure className="image is-4by3">
-                  <a href={project.live} target="_blank" rel="noreferrer">
+                  <a href={project.live || project.repo} target="_blank" rel="noreferrer">
                     <img
                       src={process.env.PUBLIC_URL + project.image}
-                      alt="Project Screenshot"
+                      alt={`${project.title} screenshot`}
                     />
                   </a>
                 </figure>
@@ -80,16 +80,18 @@ function Project(props) {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Look at the Repository
+                        View source
                       </a>
-                      <a
-                        href={project.live}
-                        className="card-footer-item"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        Enjoy it on the live site!
-                      </a>
+                      {project.live && (
+                        <a
+                          href={project.live}
+                          className="card-footer-item"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Open live demo
+                        </a>
+                      )}
                     </footer>
                   </div>
                 </div>
