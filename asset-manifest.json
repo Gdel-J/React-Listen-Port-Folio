@@ -1,21 +1,16 @@
 {
   "files": {
-    "main.css": "/React-Listen-Port-Folio/static/css/main.36feae65.chunk.css",
-    "main.js": "/React-Listen-Port-Folio/static/js/main.d79f043b.chunk.js",
-    "main.js.map": "/React-Listen-Port-Folio/static/js/main.d79f043b.chunk.js.map",
-    "runtime-main.js": "/React-Listen-Port-Folio/static/js/runtime-main.4fc96014.js",
-    "runtime-main.js.map": "/React-Listen-Port-Folio/static/js/runtime-main.4fc96014.js.map",
-    "static/js/2.8b0f5f54.chunk.js": "/React-Listen-Port-Folio/static/js/2.8b0f5f54.chunk.js",
-    "static/js/2.8b0f5f54.chunk.js.map": "/React-Listen-Port-Folio/static/js/2.8b0f5f54.chunk.js.map",
+    "main.css": "/React-Listen-Port-Folio/static/css/main.b6323f38.css",
+    "main.js": "/React-Listen-Port-Folio/static/js/main.fefbd324.js",
+    "static/media/HomeBackground5.jpg": "/React-Listen-Port-Folio/static/media/HomeBackground5.192040c2608c4759acc6.jpg",
+    "static/media/HomeBackground6.jpg": "/React-Listen-Port-Folio/static/media/HomeBackground6.74740e720da0b48e65fe.jpg",
+    "static/media/header-background.jpg": "/React-Listen-Port-Folio/static/media/header-background.988b85a12b00e6a903cb.jpg",
     "index.html": "/React-Listen-Port-Folio/index.html",
-    "static/css/main.36feae65.chunk.css.map": "/React-Listen-Port-Folio/static/css/main.36feae65.chunk.css.map",
-    "static/js/2.8b0f5f54.chunk.js.LICENSE.txt": "/React-Listen-Port-Folio/static/js/2.8b0f5f54.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/React-Listen-Port-Folio/static/media/header-background.988b85a1.jpg"
+    "main.b6323f38.css.map": "/React-Listen-Port-Folio/static/css/main.b6323f38.css.map",
+    "main.fefbd324.js.map": "/React-Listen-Port-Folio/static/js/main.fefbd324.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.4fc96014.js",
-    "static/js/2.8b0f5f54.chunk.js",
-    "static/css/main.36feae65.chunk.css",
-    "static/js/main.d79f043b.chunk.js"
+    "static/css/main.b6323f38.css",
+    "static/js/main.fefbd324.js"
   ]
 }
